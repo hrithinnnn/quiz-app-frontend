@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Quiz Game</h1>
+      <button id="newGame" class="btn">New Game</button>
+    </header>
+    
+    <main>
+      <section class="game-info">
+        <button id="ready" class="btn">Ready</button>
+        <div id="readyCount" class="info">Ready Players: 0</div>
+        <div id="timer" class="info">Time left: 10</div>
+      </section>
+
+      <section id="questionArea" class="question-area"></section>
+      
+      <section id="displayArea" class="display-area"></section>
+      
+      <section id="chatArea" class="chat-area"></section>
+      <div class="chat-input">
+        <input type="text" id="chatInput" placeholder="Type a message">
+        <button id="chatSubmit" class="btn">Send</button>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.2/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
